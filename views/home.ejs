@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Socket IO Test</title>
+    <style>
+        .form {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hy Guys, This is Socket Test !</h1>
+        <p id="msg"></p>
+        <br>
+        <input type="text" id="task" placeholder="task" class="form"> <br>
+        <input type="text" id="start" placeholder="start" class="form"> <br>
+        <input type="text" id="end" placeholder="end" class="form"> <br>
+        <textarea id="note" placeholder="Note" class="form"></textarea> <br>
+        <button id="save" class="form">Save</button>
+
+        <hr>
+        <table border="2">
+            <thead>
+                <th>Id</th>
+                <th>Task</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Note</th>
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="socket-helpers.js"></script>
+</html>
